@@ -10,3 +10,4 @@ def create_app(config_file='settings.py'):
     db.init_app(app)
     app.register_blueprint(short)
     return app
+

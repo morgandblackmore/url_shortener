@@ -7,6 +7,10 @@ name = "pypi"
 pytest = "*"
 requests = "*"
 flask-unittest = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+flask-wtf = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
