@@ -1,0 +1,11 @@
+<form method="POST" action="{{ url_for('short.add_link')}}" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.original_url.label }}<br>
+        {{ form.original_url(size=32) }}
+        {% for error in form.original_url.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
